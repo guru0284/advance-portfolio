@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guruprasath Portfolio</title>
+  <link rel="stylesheet" href="por.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Guru<span>prasath</span></div>
+    <div class="links">
+      <a href="#home" onclick="showSection('home')">Home</a>
+      <a href="#about" onclick="showSection('about')">About</a>
+      <a href="#skills" onclick="showSection('skills')">Skills</a>
+      <a href="#projects" onclick="showSection('projects')">Projects</a>
+      <a href="#contact" onclick="showSection('contact')">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="active">
+    <div class="text">
+      <h2>Hello, I'm Guruprasath 👋</h2>
+      <p>Welcome to my personal portfolio. I'm passionate about building tech solutions with AI and web technologies.</p>
+    </div>
+    <div class="image">
+      <img src="C:\Users\GURUPRASATH SP\Downloads\IMG_20250329_203315.jpg" alt="Guruprasath Photo" />
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and curious individual currently pursuing an M.Tech Integrated degree in Computer Science and Engineering with a specialization in Data Science at Vellore Institute of Technology, Vellore. My academic journey began at AIM Matriculation Higher Secondary School, where I completed my 12th grade with an outstanding score of 95.75%. I have always been driven by a deep interest in understanding how things work, and this curiosity has shaped my approach to both learning and life. I strive to stay consistent in my efforts and am known for being thoughtful, open-minded, and sincere in what I do. While I consider my ability to adapt quickly and stay calm under pressure to be among my strengths, I am also aware that I can sometimes overthink situations or be too self-critical. However, I view these not as flaws, but as areas for growth that I continuously work on. My goal is to make a meaningful impact in the world of technology, exploring how data and intelligent systems can solve real-world problems.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>I have a strong foundation in Python, which I use for both general-purpose programming and implementing complex logic in data-driven applications. My comfort with Python extends to working with data structures, algorithms, and integrating it with various tools and libraries for AI and automation purposes. In the field of web development, I possess hands-on experience with HTML, CSS, and JavaScript, enabling me to build responsive, user-friendly, and visually appealing web interfaces. I understand the core concepts of front-end development and focus on creating clean, well-structured code that enhances user experience and accessibility. My interest in AI technology has also led me to explore the fundamentals of machine learning, data processing, and intelligent systems. I keep myself updated with the latest trends and advancements in artificial intelligence, as I believe it holds the key to solving many modern challenges. Whether it's building interactive web pages or experimenting with AI concepts, I enjoy combining creativity with logic to create meaningful tech solutions.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>AI-Driven Skill Assessment System for JEE Students</h3>
+      <p>Developed for Studize, a budding EdTech startup, this project focuses on creating a personalized assessment platform for JEE aspirants. The system is designed to evaluate a student’s performance and understanding based on a SOCA model — Strengths, Opportunities, Challenges, and Action Plan. Using AI-based analytics and dynamic feedback mechanisms, the platform identifies specific academic areas where a student excels or struggles and then recommends targeted actions for improvement. The goal is to provide smart learning insights that go beyond traditional test scoring.</p>
+      <p><strong>Technologies Used:</strong> Python, Pandas, NumPy, Scikit-learn, Data Visualization libraries (e.g., Matplotlib, Seaborn), and Flask for backend development.</p>
+      <a href="C:\Users\GURUPRASATH SP\Downloads\Research and Planning Document for AI final.pdf" download>Download Document</a>
+    </div>
+    <div class="project-item">
+      <h3>Tamil Handwritten Character Recognition Using Neural Networks</h3>
+      <p>This project aimed to build a deep learning model capable of recognizing Tamil handwritten characters with high accuracy. Considering the complexity and diversity of Tamil script, the model was trained using convolutional neural networks (CNNs) to handle the intricacies of handwritten strokes and variations. The dataset was preprocessed and normalized to improve model performance and reduce noise. This project showcases the potential of neural networks in regional language processing and character recognition systems.</p>
+      <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, OpenCV, NumPy.</p>
+      <a href="c:\Users\GURUPRASATH SP\Downloads\tamilhandwrittenrecognition.pdf" download>Download Document</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Phone: +91 9894529598</p>
+    <p>Email: <a href="mailto:guruprasath.sp2022@vitstudent.ac.in">guruprasath.sp2022@vitstudent.ac.in</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/guru886" target="_blank">linkedin.com/in/guruprasath-sp</a></p>
+    
+
+  </section>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guruprasath SP. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    function showSection(id) {
+      sections.forEach(section => {
+        if (section.id === id) {
+          section.classList.add('active');
+        } else {
+          section.classList.remove('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
