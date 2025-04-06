@@ -21,7 +21,7 @@ body {
   nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: gold;
+    color: rgb(211, 186, 48);
   }
   
   nav .links a {
@@ -50,25 +50,33 @@ body {
   }
   
   #home {
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
-    justify-content: space-between;
-    background: #111;
+    justify-content: space-evenly;
+    background: #080808;
+    display: flex;
+    align-items: center;
+
   }
   
   #home .text {
-    max-width: 60%;
-    font-size: 1.2rem;
-  }
-  
-  #home .image {
-    max-width: 40%;
+    max-width: 70%;
+    font-size: 2rem;
     animation: zoomIn 1.5s ease-in-out;
   }
   
+  #home .image {
+    max-width: 170%;
+    animation: zoomIn 1.5s ease-in-out;
+    margin-left: -40px;
+    margin-right: auto;
+   
+    
+   
+  }
+  
   #home .image img {
-    width: 70%;
-    border-radius: 20px;
+    width:170%;
     
   }
   
@@ -84,32 +92,34 @@ body {
   }
   
   #about {
-    background: linear-gradient(to right, #2c2c2c, #1c1c1c);
-    border-left: 8px solid gold;
+    background: linear-gradient(to right, #b88d00, #b39c38);
+    border-left: 8px solid rgb(241, 238, 238);
+    font-style: italic;
+    font-size: 2rem;
+    
   }
   
   #skills {
-    background: linear-gradient(to right, #1a1a1a, #2a2a2a);
-    border-left: 8px solid gold;
+    background: linear-gradient(to right, #b88d00, #b39c38);
+    border-left: 8px solid rgb(241, 236, 236);
+    font-style: italic;
+    font-size: 2rem;
   }
   
   #projects {
-    background: linear-gradient(to right, #1e1e1e, #303030);
-    border-left: 8px solid gold;
+    background: linear-gradient(to right, #b88d00, #b39c38);
+    border-left: 8px solid rgb(245, 244, 241);
   }
   
-  #contact {
-    background: #121212;
-    text-align: center;
-    border-left: 8px solid gold;
-  }
+ 
   
-  .project-item {
-    background: #222;
+  :hover.project-item {
+    background: #312e2e;
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    cursor: pointer;
   }
   
   .project-item a {
@@ -122,5 +132,66 @@ body {
     padding: 1rem;
     background: #1c1c1c;
     color: #aaa;
+  }
+  .download-btn {
+    display: inline-block;
+    background-color: #f0c040;
+    color: #111;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .download-btn:hover {
+    background-color: #d9a520;
+    color: #fff;
+  }
+  #contact {
+    padding: 60px 10%;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-container:hover {
+    background-color: #222;
+    border-radius: 16px;
+    padding: 40px; /* increased padding */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 800px; /* increased width */
+    width: 100%;
+    margin: auto;
+    text-align: left;
+  }
+  
+  
+  .contact-container h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #f0c040;
+  }
+  
+  .contact-info p {
+    font-size: 20px; /* was 18px */
+  }
+  
+  .download-btn {
+    padding: 14px 28px; /* bigger button */
+    font-size: 18px;
+  }
+  .animated-science {
+    font-size: 60px;
+    animation: float 5s ease-in-out infinite;
+    cursor: pointer;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
   }
   
