@@ -1,231 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guruprasath Portfolio</title>
-  <link rel="stylesheet" href="por.css" />
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guruprasath Portfolio</title>
+    <link rel="stylesheet" href="por.css">
 </head>
 <body>
-  <nav>
-    
+    <nav>
+        <div class="logo">Guru<span>prasath</span></div>
+        <div class="links">
+            <a href="#home" onclick="showSection('home')">Home</a>
+            <a href="#about" onclick="showSection('about')">About</a>
+            <a href="#skills" onclick="showSection('skills')">Skills</a>
+            <a href="#projects" onclick="showSection('projects')">Projects</a>
+            <a href="#contact" onclick="showSection('contact')">Contact</a>
+        </div>
+    </nav>
 
-    <div class="logo">Guru<span>prasath</span></div>[]
-    <div class="links">
-      <a href="#home" onclick="showSection('home')">Home</a>
-      <a href="#about" onclick="showSection('about')">About</a>
-      <a href="#skills" onclick="showSection('skills')">Skills</a>
-      <a href="#projects" onclick="showSection('projects')">Projects</a>
-      <a href="#contact" onclick="showSection('contact')">Contact</a>
-    </div>
-  </nav>
+    <section id="home" class="active">
+        <div class="text">
+            <h2>Hello, I'm Guruprasath <span class="auto-type"></span></h2>
+            <p>Welcome to my personal portfolio.</p>
+        </div>
+        <div class="image">
+            <img src="C:\Users\GURUPRASATH SP\Downloads\IMG_20250329_203315-removebg-preview.png" alt="Guruprasath Photo" />
+        </div>
+        <div class="animated-science">
+            🤖 🧠 🕹️ 🛸
+        </div>
+    </section>
 
-  <section id="home" class="active">
-    <div class="text">
-      <section class="fade-in"></section>
-      <h2>Hello, I'm Guruprasath <span class="auto-type"></span></h2>
-      <p>Welcome to my personal portfolio.</p>
-    </div>
-    <div class="image">
-      <img src="C:\Users\GURUPRASATH SP\Downloads\IMG_20250329_203315-removebg-preview.png" alt="Guruprasath Photo" />
-    </div>
-    <div class="animated-science">
-      🤖 
-      🧠
-      🕹️ 
-      🛸 
-    </div>
-  </section>
-
-  <section id="about">
     <section id="about">
         <h2 class="section-title">🎓 About Me</h2>
         <div class="education-container">
-          
-          <!-- School Card -->
-          <div class="edu-card">
-            <h3>🏫 School</h3>
-            <p><strong>Name:</strong> AIM Matriculation Hr. Sec. School</p>
-            <p><strong>Board:</strong> State Board</p>
-            <p><strong>Year:</strong> 2022</p>
-            <p><strong>Score:</strong> 95.75%</p>
-          </div>
-      
-          <!-- College Card -->
-          <div class="edu-card">
-            <h3>🏛️ College</h3>
-            <p><strong>Name:</strong> VIT Vellore</p>
-            <p><strong>Program:</strong> M.Tech Integrated CSE with Data Science</p>
-            <p><strong>Year:</strong> 2022 - 2026</p>
-            <p><strong>Location:</strong> Tamil Nadu, India</p>
-          </div>
-          <center>
-          <p>"I am a passionate and curious individual currently pursuing an M.Tech Integrated degree in Computer Science and Engineering with a specialization in Data Science at Vellore Institute of Technology, Vellore. My academic journey began at AIM Matriculation Higher Secondary School, where I completed my 12th grade with an outstanding score of 95.75%. I have always been driven by a deep interest in understanding how things work, and this curiosity has shaped my approach to both learning and life. I strive to stay consistent in my efforts and am known for being thoughtful, open-minded, and sincere in what I do. While I consider my ability to adapt quickly and stay calm under pressure to be among my strengths, I am also aware that I can sometimes overthink situations or be too self-critical. However, I view these not as flaws, but as areas for growth that I continuously work on. My goal is to make a meaningful impact in the world of technology, exploring how data and intelligent systems can solve real-world problems."</p>
-          </center>
-        </div>
-      </section>
-      
-  </section>
+            <div class="edu-card">
+                <h3>🏫 School</h3>
+                <p><strong>Name:</strong> AIM Matriculation Hr. Sec. School</p>
+                <p><strong>Board:</strong> State Board</p>
+                <p><strong>Year:</strong> 2022</p>
+                <p><strong>Score:</strong> 95.75%</p>
+            </div>
 
-  <section id="skills" >
-    
+            <div class="edu-card">
+                <h3>🏛️ College</h3>
+                <p><strong>Name:</strong> VIT Vellore</p>
+                <p><strong>Program:</strong> M.Tech Integrated CSE with Data Science</p>
+                <p><strong>Year:</strong> 2022 - 2026</p>
+                <p><strong>Location:</strong> Tamil Nadu, India</p>
+            </div>
+            <center>
+                <p>"I am a passionate and curious individual currently pursuing an M.Tech Integrated degree in Computer Science and Engineering with a specialization in Data Science at Vellore Institute of Technology, Vellore. My academic journey began at AIM Matriculation Higher Secondary School, where I completed my 12th grade with an outstanding score of 95.75%. I have always been driven by a deep interest in understanding how things work, and this curiosity has shaped my approach to both learning and life. I strive to stay consistent in my efforts and am known for being thoughtful, open-minded, and sincere in what I do. While I consider my ability to adapt quickly and stay calm under pressure to be among my strengths, I am also aware that I can sometimes overthink situations or be too self-critical. However, I view these not as flaws, but as areas for growth that I continuously work on. My goal is to make a meaningful impact in the world of technology, exploring how data and intelligent systems can solve real-world problems."</p>
+            </center>
+        </div>
+    </section>
+
     <section id="skills">
         <h2 class="section-title">🛠️ Skills</h2>
         <div class="skills-container">
-      
-          <!-- Soft Skills Box -->
-          <div class="skill-box">
-            <h3>💬 Soft Skills</h3>
-            <ul>
-              <li>Communication</li>
-              <li>Teamwork</li>
-              <li>Problem-Solving</li>
-              <li>Adaptability</li>
-              <li>Time Management</li>
-            </ul>
-          </div>
-      
-          <!-- Hard Skills Box -->
-          <div class="skill-box">
-            <h3>🧠 Hard Skills</h3>
-            <ul>
-              <li>Python</li>
-              <li>HTML & CSS</li>
-              <li>JavaScript</li>
-              <li>AI & Machine Learning techniques</li>
-              
-            </ul>
-          </div>
-      
+            <div class="skill-box">
+                <h3>💬 Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem-Solving</li>
+                    <li>Adaptability</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+
+            <div class="skill-box">
+                <h3>🧠 Hard Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>AI & Machine Learning techniques</li>
+                </ul>
+            </div>
         </div>
-      </section>
-      
-  </section>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-item">
-      <h3>AI-Driven Skill Assessment System for JEE Students</h3>
-      <p>Developed for Studize, a budding EdTech startup, this project focuses on creating a personalized assessment platform for JEE aspirants. The system is designed to evaluate a student’s performance and understanding based on a SOCA model — Strengths, Opportunities, Challenges, and Action Plan. Using AI-based analytics and dynamic feedback mechanisms, the platform identifies specific academic areas where a student excels or struggles and then recommends targeted actions for improvement. The goal is to provide smart learning insights that go beyond traditional test scoring.</p>
-      <p><strong>Technologies Used:</strong> Python, Pandas, NumPy, Scikit-learn, Data Visualization libraries (e.g., Matplotlib, Seaborn), and Flask for backend development.</p>
-      <a href="C:\Users\GURUPRASATH SP\Downloads\Research and Planning Document for AI final.pdf" download>Download Document</a>
-    </div>
-    <div class="project-item">
-      <h3>Tamil Handwritten Character Recognition Using Neural Networks</h3>
-      <p>This project aimed to build a deep learning model capable of recognizing Tamil handwritten characters with high accuracy. Considering the complexity and diversity of Tamil script, the model was trained using convolutional neural networks (CNNs) to handle the intricacies of handwritten strokes and variations. The dataset was preprocessed and normalized to improve model performance and reduce noise. This project showcases the potential of neural networks in regional language processing and character recognition systems.</p>
-      <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, OpenCV, NumPy.</p>
-      <a href="C:\Users\GURUPRASATH SP\Downloads\tamilhandwrittenrecognition.pdf"download>Download Document</a>
-    </div>
-  </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>AI-Driven Skill Assessment System for JEE Students</h3>
+            <p>Developed for Studize, a budding EdTech startup, this project focuses on creating a personalized assessment platform for JEE aspirants. The system is designed to evaluate a student’s performance and understanding based on a SOCA model — Strengths, Opportunities, Challenges, and Action Plan. Using AI-based analytics and dynamic feedback mechanisms, the platform identifies specific academic areas where a student excels or struggles and then recommends targeted actions for improvement. The goal is to provide smart learning insights that go beyond traditional test scoring.</p>
+            <p><strong>Technologies Used:</strong> Python, Pandas, NumPy, Scikit-learn, Data Visualization libraries (e.g., Matplotlib, Seaborn), and Flask for backend development.</p>
+            <a href="C:\Users\GURUPRASATH SP\Downloads\Research and Planning Document for AI final.pdf" download>Download Document</a>
+        </div>
+        <div class="project-item">
+            <h3>Tamil Handwritten Character Recognition Using Neural Networks</h3>
+            <p>This project aimed to build a deep learning model capable of recognizing Tamil handwritten characters with high accuracy. Considering the complexity and diversity of Tamil script, the model was trained using convolutional neural networks (CNNs) to handle the intricacies of handwritten strokes and variations. The dataset was preprocessed and normalized to improve model performance and reduce noise. This project showcases the potential of neural networks in regional language processing and character recognition systems.</p>
+            <p><strong>Technologies Used:</strong> Python, TensorFlow, Keras, OpenCV, NumPy.</p>
+            <a href="C:\Users\GURUPRASATH SP\Downloads\tamilhandwrittenrecognition.pdf" download>Download Document</a>
+        </div>
+    </section>
 
-  <section id="contact">
     <section id="contact">
         <h2>📬 Get in Touch</h2>
         <div class="contact-container">
-          
-          <!-- Contact Info Box -->
-          <div class="contact-info-box">
-            <h3>Contact Info</h3>
-            <p>📞 Phone: +91 9894529598</p>
-            <p>📧 Email: guruprasth.sp2022@vitstudent.ac.in</p>
-            <p>📍 Location: Vellore, India</p>
-          </div>
-      
-          <!-- Query Form Box -->
-          <div class="query-form-box">
-            <h3>Send a Query</h3>
-            <form id="query-form" name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
-              <button type="submit">Send Message</button>
-              <span id="msg"></span>
-            </form>
-          </div>
-      
+            <div class="contact-info-box">
+                <h3>Contact Info</h3>
+                <p>📞 Phone: +91 9894529598</p>
+                <p>📧 Email: guruprasth.sp2022@vitstudent.ac.in</p>
+                <p>📍 Location: Vellore, India</p>
+            </div>
+
+            <div class="query-form-box">
+                <h3>Send a Query</h3>
+                <form id="query-form" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                    <span id="msg"></span>
+                </form>
+            </div>
         </div>
-      </section>
-      
+        <div>
+            <center>
+                <a href="C:\Users\GURUPRASATH SP\OneDrive\Documents\re\guruprasath-resume(2).pdf" class="download-btn" download>
+                  Want to know more about me? Download my Resume
+                </a>
+              </center>
+        </div>
+    </section>
 
-  </section>
+    <footer>
+        <p>&copy; 2025 Guruprasath SP. All Rights Reserved.</p>
+        <p>
+            <a href="https://github.com/guru0284" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/guru886" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
 
-  <footer>
-    <p>&copy; 2025 Guruprasath SP. All Rights Reserved.</p>
-    <p>
-      <a href="https://github.com/guru0284" target="_blank">GitHub</a> |
-      <a href="https://linkedin.com/in/guru886" target="_blank">LinkedIn</a>
-    </p>
-  </footer>
+    <script>
+        const sections = document.querySelectorAll('section');
 
-  <script>
-    const sections = document.querySelectorAll('section');
-
-    function showSection(id) {
-      sections.forEach(section => {
-        if (section.id === id) {
-          section.classList.add('active');
-        } else {
-          section.classList.remove('active');
+        function showSection(id) {
+            sections.forEach(section => {
+                if (section.id === id) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
         }
-      });
-    }
-    const sheetName = 'Sheet1';
-const scriptProp = PropertiesService.getScriptProperties();
+        const scriptURL = 'AKfycbzGLlzgeQlkUn1C4CYqn6fEQ1-gay9mVFAbVlN4JFACVpvCubsb5HghDNqG3J_taC0VBw';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('msg');
 
-function initialSetup() {
-  const activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-  scriptProp.setProperty('key', activeSpreadsheet.getId());
-}
-
-function doPost(e) {
-  const lock = LockService.getScriptLock();
-  lock.waitLock(10000);
-
-  try {
-    const doc = SpreadsheetApp.openById(scriptProp.getProperty('key'));
-    const sheet = doc.getSheetByName(sheetName);
-
-    const data = JSON.parse(e.postData.contents);
-    sheet.appendRow([new Date(), data.Name, data.Email, data.Message]);
-
-    return ContentService
-      .createTextOutput(JSON.stringify({ result: 'success' }))
-      .setMimeType(ContentService.MimeType.JSON);
-  } catch (e) {
-    return ContentService
-      .createTextOutput(JSON.stringify({ result: 'error', error: e }))
-      .setMimeType(ContentService.MimeType.JSON);
-  }
-}
-
-  const scriptURL = 'https://script.google.com/macros/s/YOUR_DEPLOYED_SCRIPT_URL/exec'; // Replace with your URL
-  const form = document.forms['submit-to-google-sheet'];
-  const msg = document.getElementById('msg');
-
-  form.addEventListener('submit', e => {
+form.addEventListener('submit', e => {
     e.preventDefault();
     fetch(scriptURL, {
-      method: 'POST',
-      body: new FormData(form)
-    })
-    .then(response => {
-      msg.innerHTML = "Message sent successfully!";
-      form.reset();
-    })
-    .catch(error => {
-      msg.innerHTML = "Something went wrong!";
-      console.error('Error!', error.message);
-    });
-  });
-  
+            method: 'POST',
+            body: new FormData(form)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            msg.innerHTML = "Message sent successfully!";
+            form.reset();
+        })
+        .catch(error => {
+            msg.innerHTML = "Something went wrong!";
+            console.error('Error!', error.message);
+        });
+});
 
-  var typed = new Typed(".auto-type", {
-    strings: ["AI Enthusiast 🤖", "Tech Explorer 🚀", "Web Developer 🌐"],
-    typeSpeed: 50,
-    backSpeed: 30,
-    loop: true
-  });
-</script>
+    </script>
+    
 </body>
 </html>
