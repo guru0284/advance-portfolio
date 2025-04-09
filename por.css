@@ -129,7 +129,9 @@ body {
   }
   
   .edu-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+
   }
   
   .edu-card h3 {
@@ -177,7 +179,9 @@ body {
   }
   
   .skill-box:hover {
-    transform: translateY(-10px);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+
   }
   
   .skill-box h3 {
@@ -446,3 +450,249 @@ body {
     color: #fff;
     transform: translateY(-5px);
   }
+  /* ------------------------------------ */
+/*           RESPONSIVE QUERIES         */
+/* ------------------------------------ */
+
+@media (max-width: 1024px) {
+  nav .links a {
+    margin: 0.5rem;
+  }
+
+  .edu-card, .skill-box, .project-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #home .text,
+  #home .image {
+    max-width: 100%;
+  }
+
+  .edu-card,
+  .skill-box,
+  .project-item {
+    width: 100%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav .logo {
+    font-size: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  #home .text {
+    font-size: 1.5rem;
+  }
+
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .animated-science {
+    font-size: 40px;
+  }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+nav .links a {
+  position: relative;
+}
+
+nav .links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: gold;
+  transition: width 0.3s ease;
+}
+
+nav .links a:hover::after {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  #home .text {
+    max-width: 100%;
+    font-size: 1.8rem;
+    order: 2;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image {
+    max-width: 80%;
+    margin: 0 auto 1rem;
+    order: 1;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image img {
+    width: 100%;
+  }
+
+  .animated-science {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  #home .text {
+    max-width: 100%;
+    font-size: 1.8rem;
+    order: 2;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image {
+    max-width: 80%;
+    margin: 0 auto 1rem;
+    order: 1;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image img {
+    width: 100%;
+  }
+
+  .animated-science {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  #home .text {
+    max-width: 100%;
+    font-size: 1.8rem;
+    order: 2;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image {
+    max-width: 80%;
+    margin: 0 auto 1rem;
+    order: 1;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image img {
+    width: 100%;
+  }
+
+  .animated-science {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  #home .text {
+    max-width: 100%;
+    font-size: 1.8rem;
+    order: 2;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image {
+    max-width: 80%;
+    margin: 0 auto 1rem;
+    order: 1;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image img {
+    width: 100%;
+  }
+
+  .animated-science {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  #home .text {
+    max-width: 100%;
+    font-size: 1.8rem;
+    order: 2;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image {
+    max-width: 80%;
+    margin: 0 auto 1rem;
+    order: 1;
+    animation: zoomIn 1s ease-in-out;
+  }
+
+  #home .image img {
+    width: 100%;
+  }
+
+  .animated-science {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
